@@ -15,4 +15,6 @@ brew install starship
 brew install git
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install --cask wezterm
+brew install font-meslo-lg-nerd-font
 ```
