@@ -9,7 +9,7 @@ ahead = '[ ](bold purple) '
 format = '([$all_status$ahead_behind]($style))'
 
 [[battery.display]]
-threshold = 50
+threshold = 20
 
 [lua]
 detect_folders = []
