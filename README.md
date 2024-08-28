@@ -3,10 +3,6 @@
 ```
 brew install eza
 brew install bat
-brew install koekeishiya/formulae/yabai
-brew install koekeishiya/formulae/skhd
-brew tap FelixKratz/formulae
-brew install sketchybar
 brew install tree
 brew install cmatrix
 brew install node
