@@ -15,3 +15,7 @@ brew install --cask wezterm
 brew install font-fira-code
 brew install neovim
 ```
+
+## Past Configuration
+
+https://github.com/Szukyu/dotfiles/tree/2e99f62822eb40fd32f0b1bbbf2f9e6e59f6779d
