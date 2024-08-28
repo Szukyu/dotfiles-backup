@@ -1,4 +1,4 @@
-## Commands to Run 
+## Packages to Install
 
 ```
 brew install eza
@@ -14,6 +14,7 @@ brew install zsh-syntax-highlighting
 brew install --cask wezterm
 brew install font-fira-code
 brew install neovim
+brew install --cask nikitabobko/tap/aerospace
 ```
 
 ## Past Configuration
