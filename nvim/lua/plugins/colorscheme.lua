@@ -3,11 +3,13 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      require("tokyonight").setup({
-        transparent_background = true,
-      })
-      vim.cmd.colorscheme "tokyonight-night"
+    opts = {
+      style = "night",
+    },
+    config = function(_, opts)
+      require("tokyonight").setup(opts)
+      vim.cmd.colorscheme("tokyonight")
     end
-  }
+  },
 }
+

@@ -10,8 +10,8 @@ vim.opt.swapfile = false
 vim.opt.background = "dark"
 vim.opt.signcolumn = "yes"
 
-vim.keymap.set("n", "<leader>k", "<cmd>BufferLineCycleNext<CR>", { desc = "Next Tab"})
-vim.keymap.set("n", "<leader>j", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous Tab"})
+vim.keymap.set("n", "<leader>l", "<cmd>BufferLineCycleNext<CR>", { desc = "Next Tab"})
+vim.keymap.set("n", "<leader>h", "<cmd>BufferLineCyclePrev<CR>", { desc = "Previous Tab"})
 vim.keymap.set("n", "<leader>w", "<cmd>Bdelete<CR>", { desc = "Close Tab"})
 
 
