@@ -20,3 +20,5 @@ brew install --cask nikitabobko/tap/aerospace
 ## Past Configuration
 
 https://github.com/Szukyu/dotfiles/tree/2e99f62822eb40fd32f0b1bbbf2f9e6e59f6779d
+
+- Has Sketchybar, Yabai, Skhd
