@@ -3,13 +3,9 @@ local mux = wezterm.mux
 
 local config = wezterm.config_builder()
 
-config.enable_wayland = true
-config.webgpu_power_preference = "HighPerformance"
--- config.animation_fps = 1
 config.cursor_blink_ease_in = "Constant"
 config.cursor_blink_ease_out = "Constant"
 
--- Colorscheme
 config.color_scheme_dirs = { wezterm.home_dir .. "/projects/tokyonight.nvim/extras/wezterm" }
 config.color_scheme = "tokyonight_night"
 wezterm.add_to_config_reload_watch_list(config.color_scheme_dirs[1] .. config.color_scheme .. ".toml")
@@ -33,8 +29,8 @@ config.scrollback_lines = 10000
 config.enable_tab_bar = false
 
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.9
-config.macos_window_background_blur = 8
+config.window_background_opacity = 0.75
+config.macos_window_background_blur = 10
 
 config.window_close_confirmation = 'NeverPrompt'
 
