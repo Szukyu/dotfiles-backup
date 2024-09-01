@@ -73,8 +73,6 @@ return {
     require('lspconfig')['pyright'].setup{
       capabilities = capabilities,
     }
-    -- Change the Diagnostic symbols in the sign column (gutter)
-    -- (not in youtube nvim video)
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
@@ -145,6 +143,11 @@ return {
               },
             },
           },
+        })
+      end,
+      ["clangd"] = function()
+        lspconfig["clangd"].setup({
+          capabilities = capabilities,
         })
       end,
     })
