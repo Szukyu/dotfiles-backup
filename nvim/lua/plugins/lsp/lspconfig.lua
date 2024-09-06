@@ -150,6 +150,11 @@ return {
           capabilities = capabilities,
         })
       end,
+      ["tailwindcss"] = function()
+        lspconfig["tailwindcss"].setup({
+          capabilities = capabilities,
+        })
+      end,
     })
   end,
 }
