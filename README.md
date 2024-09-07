@@ -15,6 +15,7 @@ brew install --cask wezterm
 brew install font-fira-code
 brew install neovim
 brew install --cask nikitabobko/tap/aerospace
+brew install zoxide
 ```
 
 ## Past Configuration
