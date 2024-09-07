@@ -20,7 +20,6 @@ return {
       callback = function(ev)
         local opts = { buffer = ev.buf, silent = true }
 
-        -- set keybinds
         opts.desc = "Show LSP references"
         keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
 
@@ -62,11 +61,8 @@ return {
       end,
     })
 
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
-    capabilities.textDocument.publishDiagnostics.tagSupport.valueSet = { 2 }
-    require('lspconfig')['pyright'].setup{
-      capabilities = capabilities,
-    }
+    local capabilities = cmp_nvim_lsp.default_capabilities()
+
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
@@ -86,7 +82,6 @@ return {
             vim.api.nvim_create_autocmd("BufWritePost", {
               pattern = { "*.js", "*.ts" },
               callback = function(ctx)
-                -- Here use ctx.match instead of ctx.file
                 client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
               end,
             })
@@ -120,34 +115,7 @@ return {
           },
         })
       end,
-      ["pyright"] = function()
-        lspconfig["pyright"].setup({
-          capabilities = capabilities,
-          settings = {
-              python = {
-              analysis = {
-                typeCheckingMode = "off",
-                diagnosticMode = "workspace",
-              },
-            },
-          },
-        })
-      end,
-      ["clangd"] = function()
-        lspconfig["clangd"].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["tailwindcss"] = function()
-        lspconfig["tailwindcss"].setup({
-          capabilities = capabilities,
-        })
-      end,
-      ["tsserver"] = function()
-        lspconfig["tsserver"].setup({
-          capabilities = capabilities,
-        })
-      end,
     })
   end,
 }
+
