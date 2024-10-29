@@ -8,14 +8,14 @@ config.cursor_blink_ease_out = "Constant"
 
 config.color_scheme = "tokyonight_night"
 config.colors = {
-  indexed = { [241] = "#65bcff" },
+	indexed = { [241] = "#65bcff" },
 }
 
 config.underline_thickness = 3
 config.cursor_thickness = 4
 config.underline_position = -6
 
-config.font_size = 15
+config.font_size = 14
 config.font = wezterm.font({ family = "Fira Code" })
 config.bold_brightens_ansi_colors = true
 
@@ -29,12 +29,6 @@ config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.9
 config.macos_window_background_blur = 10
 
-config.window_close_confirmation = 'NeverPrompt'
-
-wezterm.on("gui-startup", function()
-  local tab, pane, window = mux.spawn_window{}
-  window:gui_window():maximize()
-end)
+config.window_close_confirmation = "NeverPrompt"
 
 return config
-
