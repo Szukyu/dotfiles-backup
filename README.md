@@ -4,6 +4,7 @@
 brew install eza
 brew install bat
 brew install tree
+brew install fzf
 brew install cmatrix
 brew install node
 brew install ripgrep
