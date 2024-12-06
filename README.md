@@ -26,3 +26,6 @@ brew install --cask font-fira-code
 https://github.com/Szukyu/dotfiles/tree/2e99f62822eb40fd32f0b1bbbf2f9e6e59f6779d
 
 - Sketchybar, Yabai, Skhd, Zsh
+
+
+- Aerospace, Zsh
