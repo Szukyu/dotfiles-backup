@@ -21,6 +21,16 @@ brew install --cask font-caskaydia-cove-nerd-font
 brew install --cask font-fira-code
 ```
 
+## Raycast
+
+```
+Google Translate
+Spotify
+Color Picker
+System Monitor
+Speed Test
+```
+
 ## Past Configuration
 
 https://github.com/Szukyu/dotfiles/tree/2e99f62822eb40fd32f0b1bbbf2f9e6e59f6779d
