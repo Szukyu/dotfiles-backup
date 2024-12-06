@@ -9,13 +9,16 @@ brew install node
 brew install ripgrep
 brew install starship
 brew install git
-brew install zsh-autosuggestions
-brew install zsh-syntax-highlighting
 brew install --cask wezterm
-brew install font-fira-code
 brew install neovim
-brew install --cask nikitabobko/tap/aerospace
 brew install zoxide
+brew install --cask zen-browser
+brew install --cask karabiner-elements
+brew install fish
+brew install tldr
+brew instal fastfetch
+brew install --cask font-caskaydia-cove-nerd-font
+brew install --cask font-fira-code
 ```
 
 ## Past Configuration
