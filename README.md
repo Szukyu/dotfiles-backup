@@ -31,6 +31,12 @@ Color Picker
 System Monitor
 Speed Test
 ```
+## Fisher
+
+```
+fisher install PatrickF1/fzf.fish
+fisher install jorgebucaran/autopair.fish
+```
 
 ## Past Configuration
 
