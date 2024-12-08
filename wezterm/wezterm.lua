@@ -9,6 +9,7 @@ config.cursor_blink_ease_out = "Constant"
 config.color_scheme = "tokyonight_night"
 config.colors = {
 	indexed = { [241] = "#65bcff" },
+	background = "#080A18",
 }
 
 config.initial_rows = 30
