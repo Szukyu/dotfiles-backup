@@ -9,7 +9,7 @@ in
   home.homeDirectory = "/Users/szukyu";
   xdg.enable = true;
 
-	xdg.configFile.nvim.source = mkOutOfStoreSymlink "/Users/szukyu/.dotfiles/nvim";
+  xdg.configFile.nvim.source = mkOutOfStoreSymlink "/Users/szukyu/.dotfiles/nvim";
 
   home.stateVersion = "23.11";
 }
