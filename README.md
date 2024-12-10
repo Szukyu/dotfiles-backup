@@ -1,28 +1,4 @@
-## Packages to Install
-
-```
-brew install eza
-brew install bat
-brew install tree
-brew install fzf
-brew install cmatrix
-brew install node
-brew install ripgrep
-brew install starship
-brew install git
-brew install --cask wezterm
-brew install neovim
-brew install zoxide
-brew install --cask zen-browser
-brew install --cask karabiner-elements
-brew install fish
-brew install tldr
-brew instal fastfetch
-brew install --cask font-caskaydia-cove-nerd-font
-brew install --cask font-fira-code
-```
-
-## Raycast
+## Raycast Store
 
 ```
 Google Translate
@@ -30,12 +6,6 @@ Spotify
 Color Picker
 System Monitor
 Speed Test
-```
-## Fisher
-
-```
-fisher install PatrickF1/fzf.fish
-fisher install jorgebucaran/autopair.fish
 ```
 
 ## Past Configuration
