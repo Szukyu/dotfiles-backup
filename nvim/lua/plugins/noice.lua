@@ -1,8 +1,5 @@
 return {
   "folke/noice.nvim",
-  dependencies = {
-    "rcarriga/nvim-notify",
-  },
   opts = function(_, opts)
     opts.debug = false
     opts.routes = opts.routes or {}
