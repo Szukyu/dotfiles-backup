@@ -8,8 +8,8 @@ config.cursor_blink_ease_out = "Constant"
 
 config.color_scheme = "tokyonight_night"
 config.colors = {
-	indexed = { [241] = "#65bcff" },
-	background = "#080A18",
+  indexed = { [241] = "#65bcff" },
+  background = "#080A18",
 }
 
 config.initial_rows = 30
@@ -22,11 +22,11 @@ config.underline_position = -6
 config.font_size = 15
 config.font = wezterm.font({ family = "CaskaydiaCove Nerd Font Mono" })
 config.font_rules = {
-	{
-		italic = true,
-		intensity = "Normal",
-		font = wezterm.font({ family = "Fira Code", style = "Italic" })
-	}
+  {
+    italic = true,
+    intensity = "Normal",
+    font = wezterm.font({ family = "Fira Code", style = "Italic" })
+  }
 }
 config.bold_brightens_ansi_colors = true
 
