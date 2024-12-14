@@ -3,8 +3,8 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit If It's Not There Yet 
 if [ ! -d "$ZINIT_HOME" ]; then
-   mkdir -p "$(dirname $ZINIT_HOME)"
-   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
 source "${ZINIT_HOME}/zinit.zsh"
@@ -54,7 +54,6 @@ eval "$(starship init zsh)"
 
 # Alias
 alias ls="eza --color=always --icons --group-directories-first"
-alias cat="bat --style=plain"
 alias ll="eza --color=always --icons --group-directories-first --all --long"
 
 # Shell Integrations
@@ -63,18 +62,15 @@ eval "$(zoxide init --cmd cd zsh)"
 
 # Update
 update() {
-	echo "[update] Nix"
-	nix flake update --flake ~/.config/nix
-	darwin-rebuild switch --flake ~/.config/nix#tsukuyomi
+  echo "[update] Nix"
+  nix flake update --flake ~/.config/nix
+  darwin-rebuild switch --flake ~/.config/nix#tsukuyomi
 
-	echo "[update] Homebrew"
-	brew update
-	brew upgrade
+  echo "[update] Homebrew"
+  brew update
+  brew upgrade
 
-	echo "[update] Cleaning Brew"
-	brew cleanup -s
-	brew bundle dump --describe --force 
-
-  echo "[update] Node.js"
-	npm update -g
+  # echo "[update] Cleaning Brew"
+  # brew cleanup -s
+  # brew bundle dump --describe --force 
 }
