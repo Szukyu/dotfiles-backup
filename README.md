@@ -22,4 +22,4 @@ https://github.com/Szukyu/dotfiles/tree/09d1497070d12cc31d207ff0817f1b4aacd0ecde
 
 - Fish, Homebrew, Raycast as WM
 
-** STOW + GITHUB MANAGEMENT IN NEW GITHUB REPO **
+**STOW + GITHUB MANAGEMENT IN NEW GITHUB REPO**
