@@ -55,6 +55,9 @@ eval "$(starship init zsh)"
 # Alias
 alias ls="eza --color=always --icons --group-directories-first"
 alias ll="eza --color=always --icons --group-directories-first --all --long"
+alias mkdir="mkdir -vp"
+alias mv="mv -iv"
+alias cp="cp -riv"
 
 # Shell Integrations
 eval "$(fzf --zsh)"
